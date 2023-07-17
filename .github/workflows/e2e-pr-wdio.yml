@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 16.x
       - run: npm install
-      - run: num run wdio
+      - run: npm run wdio
       - run: |
           cd features/apis
           mvn clean test -Dtest=IndividualRunner
