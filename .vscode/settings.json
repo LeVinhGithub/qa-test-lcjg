@@ -1,0 +1,10 @@
+{
+  "cucumberautocomplete.steps": ["features/step-definitions/**/*ts"],
+  "cucumberautocomplete.syncfeatures": "features/**/*feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[feature]": {
+    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
+  }
+}
