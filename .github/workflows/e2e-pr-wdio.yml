@@ -23,9 +23,9 @@ jobs:
       - run: npm install
       - run: num run wdio
       - run: |
-        cd features/apis
-        mvn clean test -Dtest=IndividualRunner
-        cd ../.. 
+          cd features/apis
+          mvn clean test -Dtest=IndividualRunner
+          cd ../.. 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.4
         if: always()
