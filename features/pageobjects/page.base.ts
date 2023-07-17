@@ -11,7 +11,8 @@ export default class Page {
    * @param path path of the sub page (e.g. /path/to/page.html)
    */
   async open(path: string) {
-    await browser.maximizeWindow();
+    if (process.env.CI === "true") await browser.setWindowSize(2000, 2000);
+    else await browser.maximizeWindow();
     await browser.url(`${environments[FE_ENV_E2E]}${path}`);
   }
 
